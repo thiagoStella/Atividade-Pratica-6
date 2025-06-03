@@ -23,7 +23,7 @@ else:
     if resposta.status_code == 200:
         dados = resposta.json()        
         if "erro" in dados and dados["erro"] ==True:
-            prinf(f"CEP '{cep_numero}' não encontrado ou inválido")
+            print(f"CEP '{cep_numero}' não encontrado ou inválido")
         else:        
             logradouro = dados["logradouro"]
             bairro = dados["bairro"]
